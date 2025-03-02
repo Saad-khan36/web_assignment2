@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+    <link rel="stylesheet" href="sign-in&sign-up(style).css">
+    <script src="sign-in(script).js"></script>
+</head>
+
+<body id="sign-inbody">
+    <!-- sign-in -->
+    <div class="container-form">
+        <form id="signInForm">
+            <div class="form-group">
+                <label for="username" class="labelcss">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="labelcss">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="checkbox" id="showPassword" onclick="togglePasswordVisibilitySignIn()"> Show Password
+                <div class="message">
+                    <ul>
+                        <li>Minimum 8 characters</li>
+                        <li>At least one uppercase letter</li>
+                        <li>At least one lowercase letter</li>
+                        <li>At least one number</li>
+                        <li>At least one special character</li>
+                    </ul>
+                </div>
+            </div>
+            <button type="submit" onclick="validateSignIn()">Sign-In</button>
+            <button type="reset">Reset</button>
+            <a href="http://127.0.0.1:3000/sign-up.html" id="signUp">
+                <button type="button">Sign-up</button>
+            </a>
+
+        </form>
+    </div>
+
+
+
+
+</body>
+
+</html>

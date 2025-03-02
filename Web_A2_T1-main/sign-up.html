@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="sign-in&sign-up(style).css">
+    <script src="sign-up(script).js"></script>
+</head>
+
+<body>
+    <!-- sign-up -->
+    <div class="container-form">
+        <form id="signInForm">
+
+            <div class="form-group">
+                <label for="username" class="labelcss">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="labelcss">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Cpassword" class="labelcss">Conform Password:</label>
+                <input type="password" id="Cpassword" name="Cpassword" placeholder="Conform Password" required>
+            </div>
+
+            <input type="checkbox" id="showPassword" onclick="togglePasswordVisibility()"> Show Passwords
+            
+            <div class="message">
+                <ul>
+                    <li>Minimum 8 characters</li>
+                    <li>At least one uppercase letter</li>
+                    <li>At least one lowercase letter</li>
+                    <li>At least one number</li>
+                    <li>At least one special character</li>
+                </ul>
+            </div>
+
+
+            <div class="form-group">
+                <label for="email" class="labelcss">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="labelcss"> Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age" class="labelcss">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender" class="labelcss">Gender:</label>
+                <input type="radio" id="male" name="gender" required>
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" id="female" name="gender" required>
+                <label for="female">Female</label>
+                <br>
+                <input type="radio" id="custom" name="gender" required>
+                <label for="custom">Custom</label>
+            </div>
+
+
+            <button type="submit" onclick="validateSignUp()">Sign-Up</button>
+            <button type="reset">Reset</button>
+            <a href="http://127.0.0.1:3000/sign-in.html" id="signUp">
+                <button type="button">Sign-In</button>
+            </a>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
